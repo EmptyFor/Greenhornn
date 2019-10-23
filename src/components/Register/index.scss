@@ -1,0 +1,59 @@
+.register-sign-up-btn,
+.register-sign-in-btn {
+  width: 90px;
+  justify-content: center;
+  border: 1px solid #4bbc87;
+}
+
+.register-sign-in-btn {
+  background: none;
+  color: #4bbc87;
+  border: 1px solid #4bbc8700;
+}
+
+.register-sign-in-btn:hover {
+  background: none;
+  border: 1px solid #4bbc87;
+}
+
+.register-nav-panel {
+  position: relative;
+  height: 20vh;
+  margin-block-start: 5%;
+  border-top: 1px solid #4bbc87;
+  display: flex;
+
+  .nav-panel {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 600;
+    // background: black;
+    cursor: pointer;
+    img {
+      margin-block-start: -10%;
+      margin-block-end: 5%;
+    }
+    span {
+      background: none;
+      color: rgba(240, 248, 255, 0.699);
+    }
+  }
+
+  .nav-bar-slider {
+    position: absolute;
+    width: 33%;
+    height: 8px;
+    border-radius: 4px;
+    background: #4bbc87;
+    top: -4px;
+    left: 0;
+    transition: .9s ease-in-out;
+  }
+
+  
+}

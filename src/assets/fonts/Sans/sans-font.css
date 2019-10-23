@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'DM Sans Regular';
+    src: url('DMSans-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans Medium';
+    src: url('DMSans-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+

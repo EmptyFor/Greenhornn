@@ -1,0 +1,23 @@
+.rectangle-btn {
+  background: rgb(69, 189, 134);
+  color: white;
+  margin-inline-end: 2%;
+  width: 140px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: center;
+  height: 40px;
+  padding: 0 2%;
+  justify-content: space-between;
+  font-family: "DM Sans Medium";
+  cursor: pointer;
+  transition: .6s;
+  user-select: none;
+}
+
+.rectangle-btn:hover {
+    background-color: rgb(41, 141, 96);
+}
