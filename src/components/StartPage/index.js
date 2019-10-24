@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import RectangleButton from '../common/Buttons/RectAngleBtn';
+import AnimatedBg from '../../assets/animation/AnimatedBg';
 // import { bindActionCreators } from 'redux';
 import './index.scss';
 import './index.media.scss';
@@ -12,6 +13,7 @@ class StartPage extends Component {
 
         return (
             <Fragment>
+                <AnimatedBg />
                 <div className="start-wrapper">
                     <div className="start-main-info">
                         <div className="start-main-info-big">
@@ -31,7 +33,7 @@ class StartPage extends Component {
                         </div>
 
                     </div>
-                    <div className="under-bg"></div>
+                    {/* <div className="under-bg"></div> */}
                 </div>
             </Fragment>
         )
