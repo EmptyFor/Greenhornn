@@ -1,7 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import RectangleButton from '../common/Buttons/RectAngleBtn';
+import { Link } from 'react-router-dom'
 // import { bindActionCreators } from 'redux';
+
+import RectangleButton from '../common/Buttons/RectAngleBtn';
+
 import './index.scss';
 import './index.media.scss';
 import * as arrow from '../../assets/images/arrow1.png';
@@ -19,7 +22,7 @@ class StartPage extends Component {
                                 <img style={{ width: '100%' }} alt="" src={arrow} />
                             </div>
                             <div className="start-main-texts">
-                                <span className="text-up">Get your game up!</span>
+                                <Link><span className="text-up">Get your game up!</span></Link>
                                 <span className="text-down">Greenhorn</span>
                             </div>
                         </div>
