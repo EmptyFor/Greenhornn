@@ -33,7 +33,7 @@ class StartPage extends Component {
                         </div>
 
                     </div>
-                    {/* <div className="under-bg"></div> */}
+                    <div className="under-bg"></div>
                 </div>
             </Fragment>
         )

@@ -6,7 +6,6 @@ const AnimatedBg = () => {
 
     React.useEffect(() => {
         let canvas = canvasRef.current
-        console.log(canvas)
         animationInit(canvas)
     })
 
@@ -16,9 +15,9 @@ const AnimatedBg = () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        var stars = [], // Array that contains the stars
-            FPS = 120, // Frames per second
-            x = 100, // Number of stars
+        let stars = [], // Array that contains the stars
+            FPS = 60, // Frames per second
+            x = 190, // Number of stars
             mouse = {
                 x: 0,
                 y: 0
@@ -26,11 +25,11 @@ const AnimatedBg = () => {
 
         // Push stars to array
 
-        for (var i = 0; i < x; i++) {
+        for (let i = 0; i < x; i++) {
             stars.push({
                 x: Math.random() * canvas.width,
                 y: Math.random() * canvas.height,
-                radius: Math.random() * 1 + 1,
+                radius: Math.random() * 1 + 5,
                 vx: Math.floor(Math.random() * 50) - 25,
                 vy: Math.floor(Math.random() * 50) - 25
             });
@@ -43,8 +42,8 @@ const AnimatedBg = () => {
 
             ctx.globalCompositeOperation = "lighter";
 
-            for (var i = 0, x = stars.length; i < x; i++) {
-                var s = stars[i];
+            for (let i = 0, x = stars.length; i < x; i++) {
+                let s = stars[i];
 
                 ctx.fillStyle = "#fff";
                 ctx.beginPath();
@@ -55,26 +54,26 @@ const AnimatedBg = () => {
             }
 
             ctx.beginPath();
-            for (var i = 0, x = stars.length; i < x; i++) {
-                var starI = stars[i];
+            for (let i = 0, x = stars.length; i < x; i++) {
+                let starI = stars[i];
                 ctx.moveTo(starI.x, starI.y);
-                if (distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
-                for (var j = 0, x = stars.length; j < x; j++) {
-                    var starII = stars[j];
-                    if (distance(starI, starII) < 150) {
+                // if (distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
+                for (let j = 0, x = stars.length; j < x; j++) {
+                    let starII = stars[j];
+                    if (distance(starI, starII) < 120) {
                         // ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
                         ctx.lineTo(starII.x, starII.y);
                     }
                 }
             }
-            ctx.lineWidth = 0.1;
-            ctx.strokeStyle = 'white';
+            ctx.lineWidth = 0.5;
+            ctx.strokeStyle = '#2f682f';
             ctx.stroke();
         }
 
         function distance(point1, point2) {
-            var xs = 0;
-            var ys = 0;
+            let xs = 0;
+            let ys = 0;
 
             xs = point2.x - point1.x;
             xs = xs * xs;
@@ -88,8 +87,8 @@ const AnimatedBg = () => {
         // Update star locations
 
         function update() {
-            for (var i = 0, x = stars.length; i < x; i++) {
-                var s = stars[i];
+            for (let i = 0, x = stars.length; i < x; i++) {
+                let s = stars[i];
 
                 s.x += s.vx / FPS;
                 s.y += s.vy / FPS;

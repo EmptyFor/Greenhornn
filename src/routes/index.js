@@ -17,9 +17,9 @@ class Routes extends PureComponent {
           <Provider>
             <Route exact path={links.start_page} component={StartPage} />
             <Route path={links.register} component={Register} />
-            {/* <Route path={links.login_one} component={LoginOne} />
+            <Route path={links.login_one} component={LoginOne} />
             <Route path={links.login_two} component={LoginTwo} />
-            <Route path={links.login_three} component={LoginThree} /> */}
+            <Route path={links.login_three} component={LoginThree} />
           </Provider>
         </Switch>
       </App>
