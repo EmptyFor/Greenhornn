@@ -134,6 +134,7 @@
       .footer-main-interactive-panel {
         flex-direction: column;
         margin-left: 0;
+        justify-content: center;
 
         span {
           margin-block-end: 3%;
@@ -142,6 +143,7 @@
         .footer-btn-group {
           margin-block-start: 3%;
           margin-block-end: 5%;
+          justify-content: center;
           .footer-btns {
           }
         }

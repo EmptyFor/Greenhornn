@@ -30,9 +30,15 @@ footer {
     .footer-btn-group {
       display: flex;
       padding-left: 3%;
+
+      a {
+        margin-inline-end: 12%;
+      }
+      
       .footer-btns {
         height: 35px;
         font-size: 18px;
+        margin-inline-end: 2%;
       }
     }
 
