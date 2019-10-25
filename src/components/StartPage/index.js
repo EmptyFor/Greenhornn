@@ -1,9 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
+
 // import { bindActionCreators } from 'redux';
 
 import RectangleButton from '../common/Buttons/RectAngleBtn';
+import AnimatedBg from '../../assets/animation/AnimatedBg';
 
 import './index.scss';
 import './index.media.scss';
@@ -15,6 +17,7 @@ class StartPage extends Component {
 
         return (
             <Fragment>
+                <AnimatedBg />
                 <div className="start-wrapper">
                     <div className="start-main-info">
                         <div className="start-main-info-big">
@@ -22,7 +25,7 @@ class StartPage extends Component {
                                 <img style={{ width: '100%' }} alt="" src={arrow} />
                             </div>
                             <div className="start-main-texts">
-                                <Link><span className="text-up">Get your game up!</span></Link>
+                                <Link style={{width:'100%'}}>  <span className="text-up">Get your game up!</span></Link>
                                 <span className="text-down">Greenhorn</span>
                             </div>
                         </div>
