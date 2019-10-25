@@ -16,7 +16,7 @@ class Footer extends Component {
         return (
             <footer >
                 <div className="footer-navigation-links">
-                    <span>Our Story</span>
+                <a href="/"><span>Our Story</span></a>
                     <span>Privacy</span>
                     <span>Terms</span>
                 </div>

@@ -8,16 +8,23 @@
   width: 100%;
   height: 93vh;
   background: black;
-  background: url("../../assets/images/greenhorn_hero.jpg");
+  // background: url("../../assets/images/greenhorn_hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   .start-main-info {
     position: relative;
-    min-width: 40%;
     color: rgb(255, 255, 255);
     z-index: 10;
+    .small-text-down {
+      font-size: 20px;
+      display: inherit;
+      text-align: center;
+      margin-top: -3%;
+      font-style: italic;
+      margin-block-end: 7.8%;
+    }
   }
 
   .start-main-info-big {
@@ -37,17 +44,22 @@
       display: flex;
       flex-direction: column;
 
-      .text-up{
-        color: #45BD85;
+      .text-up {
+        color: #45bd85;
         font-size: 55px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-inline-start: 2% ;
+        font-weight: 800;
+        font-family: "Paralucent Italic";
+        margin-inline-start: 2%;
         text-decoration: underline;
       }
-      .text-down{
-        font-size: 100px;
-        font-weight: 1000;
+      .text-down {
+        font-size: 110px;
+        font-weight: 1100;
+        margin-right: 4%;
+        margin-top: -3%;
         font-style: italic;
+        letter-spacing: 2px;
+        font-family: "Paralucent Italic";
       }
     }
   }

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 import RectangleButton from '../common/Buttons/RectAngleBtn';
 import AnimatedBg from '../../assets/animation/AnimatedBg';
+import links from '../../config/links'
 
 import './index.scss';
 import './index.media.scss';
@@ -25,11 +26,11 @@ class StartPage extends Component {
                                 <img style={{ width: '100%' }} alt="" src={arrow} />
                             </div>
                             <div className="start-main-texts">
-                                <Link style={{width:'100%'}}>  <span className="text-up">Get your game up!</span></Link>
+                                <Link to={links.register} style={{ width: '100%' }}>  <span className="text-up">Get your game up!</span></Link>
                                 <span className="text-down">Greenhorn</span>
                             </div>
                         </div>
-
+                        <span className="small-text-down">The Athletic Network for Everyone! — Go! Push! Unleash Your Potential! </span>
 
                         <div className="start-main-info-btns">
                             <a href="https://www.apple.com/ios/app-store/"><RectangleButton width="120px" platform="ios" text="App Store" /></a>

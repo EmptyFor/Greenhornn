@@ -10,7 +10,7 @@ export default class RectangleButton extends Component {
         img_platform: ''
     }
 
-    componentWillMount = () => {
+    UNSAFE_componentWillMount = () => {
         return this.props.platform === 'google' ? this.setState({ img_platform: google_play_img }) : this.setState({ img_platform: apple_img })
     }
 

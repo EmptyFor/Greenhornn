@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 import links from '../../config/links'
 import RectangleButton from '../common/Buttons/RectAngleBtn'
+import AnimatedBg from '../../assets/animation/AnimatedBg';
 
 import './index.scss';
 import * as homePage from '../../assets/images/HomePage.png';
@@ -32,6 +33,7 @@ class Register extends Component {
 
         return (
             <Fragment>
+                <AnimatedBg />
                 <div className="start-wrapper">
                     <div className="start-main-info">
                         <div className="start-main-info-big">
